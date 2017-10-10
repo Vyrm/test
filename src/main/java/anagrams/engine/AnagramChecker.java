@@ -15,7 +15,7 @@ public class AnagramChecker {
             throw new IllegalSizeException();
         }
 
-        //I use HashMap solution, because complexity of algorithm is O(n),
+        //I used HashMap solution, because complexity of algorithms search, delete and put is O(1),
         //so it give fastest way to check Strings
         //Here I put chars from second string to know count of each letter.
         Map<Character, Integer> mapWithLetters = new HashMap<>();
