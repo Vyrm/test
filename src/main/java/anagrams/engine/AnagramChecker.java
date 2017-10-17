@@ -43,6 +43,13 @@ public class AnagramChecker {
             }
         }
 
+        //add negative values to list
+        for (Map.Entry<Character, Integer> characterIntegerEntry : mapWithLetters.entrySet()) {
+            if(characterIntegerEntry.getValue() < 0){
+                lettersToEdit.add(characterIntegerEntry.getKey());
+            }
+        }
+
         //Here I check ArrayList size, if it empty - Strings are anagrams
         //if not - show every letter that you need to change
         if (lettersToEdit.size() == 0) {
